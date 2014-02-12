@@ -1,0 +1,46 @@
+{
+  "name": "karma-yate-preprocessor",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maksimr/karma-yate-preprocessor.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-preprocessor",
+    "yate",
+    "builder"
+  ],
+  "author": {
+    "name": "Maksim Ryzhikov",
+    "email": "rv.maksim@yandex.com"
+  },
+  "peerDependencies": {
+    "karma": ">=0.10"
+  },
+  "dependencies": {
+    "yate": "0.0.67"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "load-grunt-tasks": "~0.2.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-npm": "~0.0.2",
+    "grunt-bump": "~0.0.7",
+    "grunt-auto-release": "~0.0.2",
+    "grunt-cli": "~0.1.9",
+    "grunt-karma": "~0.7.0",
+    "karma": "~0.11.12",
+    "karma-expect": "~1.0.0",
+    "karma-mocha": "~0.1.1",
+    "karma-phantomjs-launcher": "~0.1.1"
+  },
+  "contributors": []
+}

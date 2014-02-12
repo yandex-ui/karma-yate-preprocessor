@@ -1,0 +1,26 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "boss": true,
+  "eqnull": true,
+  "node": true,
+  "predef"     : [
+    "yate",
+    "yr",
+    "define",
+    "describe",
+    "xdescribe",
+    "it",
+    "xit",
+    "beforeEach",
+    "afterEach",
+    "expect"
+  ]
+}

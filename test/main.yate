@@ -3,3 +3,11 @@ module "main"
 match / {
     "Hello World!"
 }
+
+match / test {
+    "Hello World From Mode!"
+}
+
+match .* message-content {
+    "Message"
+}

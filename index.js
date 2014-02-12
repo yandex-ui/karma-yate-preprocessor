@@ -1,4 +1,6 @@
 var path = require('path');
+var fs = require('fs');
+
 var pattern = function(file) {
     return {
         pattern: file,
@@ -20,9 +22,15 @@ var preprocessor = function(logger) {
     return function(content, file, done) {
         var template;
 
-        log.debug('Processing "%s".', file.originalPath);
+        log.debug('Processing "%s".', file.contentPath);
         template = yate.compile(file.contentPath);
         log.debug('Compiled template "%s"', template.ast.p.Name);
+
+        /**
+         * TODO(maksimrv): Научить работать yate с TMP
+         * директорией
+         */
+        fs.unlink(file.contentPath.replace(/\.yate$/, '.yate.obj'));
 
         done(template.js);
     };
